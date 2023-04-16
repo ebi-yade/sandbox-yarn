@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  sandbox:
+    image: node:18.15
+    container_name: sandbox-yarn
+    init: true
+    working_dir: /usr/src/sandbox-yarn
+    volumes:
+      - ./:/usr/src/sandbox-yarn
